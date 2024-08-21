@@ -212,7 +212,7 @@ class Validation {
     }
 
     static removedToast(){  
-        this.showToast('Removed succesfully', 'success')
+        this.showToast('Book has been removed successfully', 'success')
     }
     static failedToast() {
         this.showToast('Please input all fields', 'failure');
