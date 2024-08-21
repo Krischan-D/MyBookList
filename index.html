@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Book List</title>
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+
+    
+   <div class="sidebar">
+        <div class="logo-content">
+            <div class="logo">
+                <img src="assets/download.png" alt="">
+                <div class="logo-name">MyBookList </div>
+            </div>
+            <i class='bx bx-menu' id="btn"></i>
+        </div>
+
+        <ul class="nav-list">
+            <li>
+               
+                <i class='bx bx-search'></i>
+                <input type="text" placeholder="Search..." required>
+            
+                <span class="tooltip">Search</span>
+            </li>
+            <li>
+                <a href="">
+                    <i class='bx bx-home' ></i>
+                    <span class="links-name">Home</span>
+                </a>
+                <span class="tooltip">Home</span>
+            </li>
+            <li>
+                <a href="">
+                    <i class='bx bx-book-alt' ></i>
+                    <span class="links-name">Books</span>
+                </a>
+                <span class="tooltip">My Books</span>
+            </li>
+            <li >
+                <a href="" class="activeLink">  
+                    <i class='bx bx-book-add' ></i>
+                    <span class="links-name">Add</span>
+                </a>
+                <span class="tooltip">Add New </span>
+            </li>
+            <li>
+                <a href="">
+                    <i class='bx bx-category' ></i>
+                    <span class="links-name">Categories</span>
+                </a>
+                <span class="tooltip">Categories</span>
+            </li>
+            <li>
+                <a href="">
+                    <i class='bx bx-bookmarks' ></i>
+                    <span class="links-name">Favorites</span>
+                </a>
+                <span class="tooltip">Favorites</span>
+            </li>
+            <li>
+                <a href="">
+                    <i class='bx bx-cog' ></i>
+                    <span class="links-name">Settings</span>
+                </a>
+                <span class="tooltip">Settings</span>
+            </li>
+            <li>
+                <a href="">
+                    <i class='bx bx-help-circle' ></i>
+                    <span class="links-name">Help/FAQ</span>
+                </a>
+                <span class="tooltip">Help/FAQ</span>
+            </li>
+        </ul>
+
+        <div class="profile-content">
+            <div class="profile">
+                <div class="profile-details">
+                    <img src="assets/profile.png" alt="">
+                    <div class="name_job">
+                        <div class="name">John Doe</div>
+                        <div class="job">Web Developer</div>
+                    </div>
+                </div>
+                <i class='bx bx-log-out' id="log-out" ></i>
+            </div>
+        </div>
+   </div>
+   
+    <div class="main-container">
+        <div class="filter"></div>
+        <div class="contents">
+
+            <div class="title">
+                <div class="img-cont">
+                    <img src="assets/download.png" alt="">
+                </div>
+                <span>My Books Lists</span>
+            </div>
+
+            <div class="row">
+                <div class="col col1 ">
+
+                    <form action="" id="book-form">
+                        <div class="form-header">
+                            <i class='bx bx-book-add' ></i> 
+                            <span>Add New Book</span>
+                        </div>
+                        <div class="input-field">
+                            <label for="">Book Name</label>
+                            <input type="text" placeholder="Enter Name" id="title">
+                        </div>
+                        <div class="input-field">
+                            <label for="">Author</label>
+                            <input type="text" placeholder="Enter Author" id="author">
+                        </div>
+                        <div class="input-field">
+                            <label for="">Date</label>
+                            <input type="date" placeholder="Enter Date" id="date">
+                        </div>
+                        <div class="input-field">
+                            <label for="">ISBN</label>
+                            <input type="number" placeholder="Enter ISBN" id="isbn" >
+                        </div>
+
+                        <input type="submit" value="Add Book" id="submittBtn"> 
+                    </form>
+
+
+
+
+                </div>
+
+
+                <div class="col col2">
+                    
+                    <table class="table">
+                        <thead class="thead">
+                            <tr >
+                                <th>Title</th>
+                                <th>Author</th>
+                                <th>Date</th>
+                                <th>ISBN#</th>
+                                <th></th>
+                            </tr>
+                        </thead>
+                        <tbody id="book-list"></tbody>
+                    </table>
+                </div>
+            </div>
+
+        </div>
+      
+    </div>
+    
+    
+    <div class="toast">
+        
+    </div>
+    
+   <script type="module" src="script.js"></script>
+</body>
+</html>
