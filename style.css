@@ -754,4 +754,51 @@ html {
   .toast.failure .progress::before {
     background-color: #f44336;
   }
+}
+@media screen and (max-width: 375px) {
+  .sidebar {
+    width: 65px;
+    padding: 0.5rem;
+  }
+  .sidebar ul li {
+    height: 40px;
+  }
+  .sidebar ul li a {
+    color: #fff;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    transition: all 0.4s ease;
+    border-radius: 12px;
+    white-space: nowrap;
+  }
+  .sidebar ul li i {
+    height: 40px;
+    min-width: 45px;
+    border-radius: 12px;
+    line-height: 30px;
+    text-align: center;
+    font-size: 1rem;
+    padding-top: 5px;
+  }
+  .sidebar ul li .bx-search {
+    position: absolute;
+    z-index: 99;
+    color: #fff;
+    font-size: 1rem;
+    width: 35px;
+  }
+  .sidebar ul li .bx-search:hover {
+    background-color: #700fd7;
+  }
+  .sidebar ul li .tooltip {
+    left: 110px;
+  }
+  .main-container {
+    width: calc(100% - 65px);
+    left: 65px;
+  }
+  .main-container .contents .row .col1 form .input-field label {
+    margin: 0.5rem 0 0 0;
+  }
 }/*# sourceMappingURL=style.css.map */
